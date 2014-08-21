@@ -85,7 +85,11 @@ How to reset all local changes forcefully
 =============
 List of the all branches in the git repo:
 	git branch -a
-  which will list all the branch created the master repo
+  which will list all the branch including the branch created by system
+
+	git branch --list 
+  Will list the branch created by users
 
 
- 
+
+====================== 
