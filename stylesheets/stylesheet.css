@@ -421,3 +421,21 @@ Small Device Styles
   }
 
 }
+
+/*======
+Own CSS
+*/
+terminal-block {
+background-color: black;
+border-radius: 8px;
+margin-top: 10px;
+margin-bottom: 30px;
+margin-right: 40px;
+padding: 1em;
+padding-bottom: 0;
+}
+terminal-code-text {
+color: #69cc93;
+font-family: courier;
+font-size: 1.3em;
+}
