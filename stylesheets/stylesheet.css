@@ -439,3 +439,30 @@ color: #69cc93;
 font-family: courier;
 font-size: 1.3em;
 }
+
+explain {
+font-family: "Georgia";
+font-weight: 400;
+font-size: 1.3em;
+color: #444444;
+line-height: 1.6em;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.terminal-heading-step-text {
+font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+font-weight: bold;
+color: #074659;
+font-style: normal;
+font-size: 1rem;
+font-size: 2em;
+padding-top: 11px;
+margin-left: 20px;
+margin-left: 0;
+margin-bottom: 0.5em;
+color: #999999;
+font-size: 1.6em;
+line-height: 1.2em;
+}
+
