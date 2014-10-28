@@ -319,8 +319,7 @@ Full-Width Styles
   z-index: 10;
   bottom: -40px;
   right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+  height: 151px;
 }
 
 .zip_download_link {
@@ -425,7 +424,7 @@ Small Device Styles
 /*======
 Own CSS
 */
-terminal-block {
+.terminal-block {
 background-color: black;
 border-radius: 8px;
 margin-top: 10px;
@@ -434,13 +433,13 @@ margin-right: 40px;
 padding: 1em;
 padding-bottom: 0;
 }
-terminal-code-text {
+.terminal-code-text {
 color: #69cc93;
 font-family: courier;
 font-size: 1.3em;
 }
 
-explain {
+.explain {
 font-family: "Georgia";
 font-weight: 400;
 font-size: 1.3em;
@@ -465,4 +464,3 @@ color: #999999;
 font-size: 1.6em;
 line-height: 1.2em;
 }
-
