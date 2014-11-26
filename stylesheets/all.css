@@ -800,6 +800,7 @@ main article h1 {
     color: #ff4143;
     line-height: 100%;
     font-weight: normal;
+    font-size: 65px;
 }
 
 main article h1 + .quick_links {
