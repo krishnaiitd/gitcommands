@@ -464,3 +464,33 @@ color: #999999;
 font-size: 1.6em;
 line-height: 1.2em;
 }
+
+pre
+{
+  margin: 0;
+  background-color: #000;
+  overflow: auto;
+  line-height: 1.3em;
+  font-size: 14px;
+  color: #fff;
+  background-color: #232125;
+  padding: 0.7em;
+  margin-bottom: 10px;
+}
+
+pre code
+{
+  background-color: #000;
+}
+
+pre.command-line
+{
+  background-color: #333;
+  color: #eee;
+  padding-bottom: 10px;
+}
+
+pre.command-line code
+{
+  background-color: #333;
+}
