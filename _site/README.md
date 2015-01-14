@@ -1,4 +1,0 @@
-gitcommands
-===========
-
-Useful git commands 
