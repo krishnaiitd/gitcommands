@@ -1,5 +1,4 @@
 .idea
-_site
-*~
-.*.swp
 .DS_Store
+.DS_Store/
+_site
