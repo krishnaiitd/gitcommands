@@ -1,0 +1,43 @@
+---
+layout: default
+title: Git Commands - Git Init Command, git init command help to create a new git repository or to convert the exisiting reposity into git repository.
+description: Git apply command help to patch particular commit taken from git cherry pick command or from git stash.
+keywords: git apply, git commands, git cherry pick, git stash.
+---
+<article id="git-init">
+  <p>
+    <h2> Git Init (<code> git init </code>) Command</h2>
+  </p>
+  <p>
+      Git init command helps you to initialize a git repository or convert a not
+      version control repository into a version control repository i.e a git repository.
+  </p>
+
+  <p> <code> git init </code> will initialize the present directory into VCS
+    repository and add a configuration directory <b>.git</b> in the present directory and makes it
+    to start recording versions of the project.
+  </p>
+  <example>
+    <code>$pwd</code>
+    <br>/Users/krishna/Documents/commands-test
+    <p> Let's check whether the above directory [commands-test] is a <b>git repository</b> or not by the
+      git command <a href="{{ site.baseurl }}/git-status">git status</a> or by checking whether
+      there is configuration directory <b>.git</b> present in current directory or not.</p>
+    <code>$git status</code>
+    <br>fatal: Not a git repository (or any of the parent directories): .git
+    <p></p>
+    <code>$ls -a</code>
+    <br>.	..
+
+    <p> So, it is clearly visible that it is not a git repository. let's
+      make it by <b>git init command</b>.</p>
+    <code>$git init</code>
+    <br>
+    <output>Initialized empty Git repository in /Users/krishna/Documents/commands-test/.git/</output>
+    <p>The commands used for the above discussion</p>
+    <img src="{{ site.baseurl }}/images/git-init-command.png" alt="git init commands">
+  </example>
+
+  <h3>Now we created a git repository, let's play with other git commands like <a href="{{ site.baseurl }}/git-status"> git status</a>, <a href="{{ site.baseurl }}/git-config"> git config</a></h3>
+
+</article>
