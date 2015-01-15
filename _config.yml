@@ -1,0 +1,7 @@
+# Site settings
+title: Git Commands | Learn every thing about git commands, usefull git commands
+email: kprasad.iitd@gmail.com
+description: "Git Commands, details description and how github and other CVS work on terminal, easy way to do the things in software development"
+twitter_username: krishaniitd
+github_username:  krishnaiitd
+baseurl: "/gitcommands"
