@@ -8,4 +8,52 @@ keywords: git config, git commands, git git config global, git config --list.
   <p>
     <h2> Git commit (<code> git commit </code>) Command</h2>
   </p>
+  <div>
+    <p class="commnad-title"> git commit is for adding the work done into VCS,
+      so that you can publish your work with your colleague. Basically if you
+      commit something in your local repositoy by the command
+      <code>git command -m "your commit message"</code> will store the changes locally, once you
+        push it to the remote repository then it is visible for others.
+    </p>
+    <p> Before commit your changes you should check that which files are changed
+      by the command <code>git status</code> this will list the files changes by
+      use, now you can add those files you want to commit by the command <code>
+        git add < files name > </code>, after adding all those file you want to
+      commit will be visible in gree colour if you check the git status. Now you
+      are ready to commit by the following command.
+      <code>git commit -m "Your commit message" </code>
+    </p>
+    <div>
+      <h2> How do you changes you commit message? </h2>
+      <p> In case you have add comment message which is not relevent or nor
+        appropriate or have you type something wrong, then you could easily
+        changes it by the following command
+      </p>
+      <code> git commit --amend</code> and press Enter. The committed message
+      will be open in your vim or vi or whatever your default editor, edit the
+      message and save it.
+    </div>
+
+    <div>
+      <h2> How do you changes you commit message when you have already pushed to your remote branch?</h2>
+      <p> In case you have already pushed to remote branch then use the following git commands to change
+        the comment and again push it to remote branch.
+      </p>
+      <p> First changes the comment
+      <code> git commit --amend</code> and press Enter. The committed message
+      will be open in your vim or vi or whatever your default editor, edit the
+      message and save it.
+      </p>
+      <p> Now push the branch again so that other can see your changes message
+        <code> git push origin BranchName --force</code> or <code> git push origin BranchName -f</code>
+      </p>
+    </div>
+
+    <h3> References: </h3>
+    <ul>
+      <li><a href="https://help.github.com/articles/changing-a-commit-message/" rel="nofollow" target="_blank">Changing a commit message - Github documentation</a>
+      <li> <a href="http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git" rel="nofollow" target="_blank">A detail discussion on stackoverflow</a>
+    </ul>
+
+  </div>
 </article>
