@@ -28,13 +28,13 @@ keywords: git config, git commands, git git config global, git config --list.
     <h3> How to set up/link a local git repository with remote repoisotry for push and pull </h3>
   </div>
   <div>
-    <code>git config user.name 'your github user name' </code>
+    <code>$ git config user.name 'your github user name' </code>
     <p> This will set the user name in your local repository, but not globaly, for gloabal configuration run the following </p>
-    <code> git config --global user.name 'your github user name'</code>
+    <code>$ git config --global user.name 'your github user name'</code>
   </div>
 
   <div>
-    <code>git remote set-url origin 'git@github.com:krishnaiitd/gitcommands.git'  </code>
+    <code>$ git remote set-url origin 'git@github.com:krishnaiitd/gitcommands.git'  </code>
     <p> This will set the  remote origin url for fetching, pull and push</p>
   </div>
 
@@ -43,25 +43,41 @@ keywords: git config, git commands, git git config global, git config --list.
     <p> Let consider when you have forked a reporitory so you probably have no permission to commit in the upstream repo. i.e from where you have forked.
       In this case, you need to set a <b>uptream</b> remote url for fetch and pulling once you have sync your reporisotry from uptream you
       can push to the forked repo i.e origin and then make a  pull request for merging into the main upstream repo.
-    <code>git remote add upstream 'git@github.com:krishnaiitd/tweepy.git'  </code>
+    <code>$ git remote add upstream 'git@github.com:krishnaiitd/tweepy.git'  </code>
     <p> If you have already upstream url, then use following command to change it </p>
-    <code>git remote set-url upstream 'git@github.com:krishnaiitd/tweepy.git'  </code>
+    <code>$ git remote set-url upstream 'git@github.com:krishnaiitd/tweepy.git'  </code>
     <p> This will set the  remote upsteam url for fetching and pulling</p>
 
     <p> Now in this case you have fetch and pull from upstream as follow </p>
-    <code> git fetch upstream BranchName </code>
-    <code> git pull upstream pull BranchName </code>
+    <code>$ git fetch upstream BranchName </code>
+    <code>$ git pull upstream pull BranchName </code>
     <p> To push the changes into origin type the following command </p>
-    <code> git push origin BranchName </code>
+    <code>$ git push origin BranchName </code>
 
   </div>
 
 
   <div>
-    <code>git config user.name 'your github user name' </code>
+    <code>$ git config user.name 'your github user name' </code>
     <p> This will set the user name in your local repository, but not globaly, for gloabal configuration run the following </p>
-    <code> git config --global user.name 'your github user name'</code>
+    <code>$ git config --global user.name 'your github user name'</code>
   </div>
 
-  git@github.com:krishna-prasad/SWIFT.git
+
+  <p> Setting your username in Git</p>
+  <code>$ git config user.email "Your user name" </code>
+
+   <p> Setting your user email in Git</p>
+  <code>$ git config user.email "Your user email" </code>
+
+   <p> Verifying your username in Git</p>
+  <code>$ git config user.name</code>
+   <span> displayed set username here </span>
+
+	<h2> Setting user name and email for every repository on your computer, try following command</h2>
+	<code>$ git config user.name "Your user name here"</code>
+	<p>Verify that it is set or not, type the following command</p>
+	<code>$ git config user.name</code>
+
+	<h3> Same for email id </h3>
 </article>
