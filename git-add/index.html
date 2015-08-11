@@ -8,6 +8,27 @@ keywords: git config, git commands, git git config global, git config --list.
   <p>
     <h2> Git add (<code> git add </code>) Command</h2>
   </p>
-  <p>
-    <img src="/images/git-add.png" alt="git add command" />
+<div> 
+<h3> git-add - Add file contents to the index for commit </h3>
+<p> This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
+</p>
+	<ul>
+
+	<li>To add a particular file, use the following command:
+	<code>$ git add path/to/file </code>
+	</li>
+
+	<li>To add a all changed files, use the following command:
+	<code>$ git add . </code>
+	</li>
+
+
+	<li>To add a all changed files of  a directory, use the following command:
+		<code>$ git add path/to/directoryOnly </code>
+	</li>
+</ul>
+
+<p> Before adding into index i.e before running above command, if you do <code>$ git status </code> all changes files listed with red colour [default colour if you havn't changed it] once you add in index by using above commands and check <code>$ git status </code> all added files for are ready for commit and visible in green </p>
+</div>
+
 </article>
