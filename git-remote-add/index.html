@@ -1,0 +1,48 @@
+---
+layout: default
+title: Git Commands - Git add Command, git add to add an untracked files into git indexes.
+description: Git add Command, git add to add an untracked files.
+keywords: git config, git commands, git git config global, git config --list.
+---
+<article id="git-remote-add">
+  <p>
+    <h2> Git add (<code> git add </code>) Command</h2>
+  </p>
+  
+<div> 
+
+<h3> This command usefull while you are working with multiple upstream i.e in case of fork and you want to do some changes in multiple person fork repository<h3>
+	<p>You and your colleagues [e.g: allice, bob etc] working on a repository called project1, and bob has created a branch bug-1 in  their fork report of project1 and changes have been completed in branch bug-1, just in case you want to change in bob branch bug-1, then you have to do the following steps before you can checkout bob branch bug-1.
+	</p>
+	<p> 1. You have already have to upstream i.e on for main repository i.e project1 and one for your fork reporsitory of project1, so the following command looks like:
+		<br>
+	<code>$ git remote -v </code>
+	<br>
+	<code>
+	origin	https://github.com/krishnaiitd/swirl_courses.git (fetch)
+	origin	https://github.com/krishnaiitd/swirl_courses.git (push)
+	upstream	git@github.com:swirldev/swirl_courses.git (fetch)
+	upstream	git@github.com:swirldev/swirl_courses.git (push)
+	</code> 
+	</p>
+
+	<p> If not then please add the remote i.e main repo as in <b>upstream</b> source. </p>
+     
+     <code>$ git remote add upstream 'git@github.com:swirldev/swirl_courses.git' </code>
+
+     And then check it again as <code> git remote -v </code> you will get it. 
+
+     <p> Now the problem here is add the bob branch in you local systeam, so that you can work on that branch i.e bug-1 of bob.  It is simple, just add another upstream as <b> bob-upstream </b> in your remote </p>
+     <code>$ git remote add bob-upstream 'git@github.com:bobusername/swirl_courses.git' </code>
+     <p> After add this you can verify by above command <code>$ git remote -v </code> bob remote are visible. Now fetch the bobs branch as <code>$ git fetch bob-upstream </code> this commands will fetch the bobs all branch, now you can pull the bob's specific branch i.e bug-1 as <code>$ git fetch bug-1</code> or <code>$ git fetch bob-upstream/bug-1</code>
+     </p>
+
+     <p> Do what ever you want and then push to bob that branch as </p>
+     <code>$ git push bob-upstream bug-1 </code>
+
+
+     <h3> Read carfully above for the command <code> git remote add </code> to work with multiple fork branches. </h3>
+
+</div>
+
+</article>

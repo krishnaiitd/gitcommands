@@ -1,11 +1,28 @@
 ---
 layout: default
 title: Git Commands - Git config Command, git config to set up a existing git repository in your local system.
-description: Git config Command, git config to know the configuration of your repository, user name and other setting
-keywords: git config, git commands, git git config global, git config --list.
+description: Git push Command, git push to command pushes your local changes to remote repository.
+keywords: git push, git push origin, git push upstream, git push .
 ---
 <article id="git-push">
   <p>
     <h2> Git push (<code> git push </code>) Command</h2>
   </p>
+  <div>
+    <p class="commnad-title"> git push command is for publishing your local changes to remote so that every one can have access of your changes
+      <code>git push origin branchName</code> will push your remote <b>origin</b>  branch <b>branchName</b> into repmote server
+    </p>
+    <p> If you have multiple remotes, you can check this by <code>git remote -v</code>, then you need to specify the remote as well, so the basic command of git push is:
+    	<code>git push remoteName branchName</code>
+    </p>
+    <p>
+    	Defualt remote is origin, for adding new remote please check this tutorial: <a href="{{ site.baseurl }}/git-remote-add">git remote</a>
+    </p>
+
+    <h3> References: </h3>
+    <ul>
+      <li><a href="https://git-scm.com/docs/git-push" rel="nofollow" target="_blank">Update remote refs along with associated objects</a>
+      <li> <a href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes" rel="nofollow" target="_blank">Git Basics - Working with Remotes</a>
+    </ul>
+  </div>
 </article>
