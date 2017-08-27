@@ -5,7 +5,28 @@ description: Git clone Command, git clone to set up a existing git repository in
 keywords: git clone, git commands, git init, git stash.
 ---
 <article id="git-clone">
-  <p>
-    <h2> Git clone (<code> git clone </code>) Command</h2>
-  </p>
+    <p>
+        <h2> Git clone (<code> git clone </code>) Command</h2>
+    </p>
+    <div>
+        <p class="commnad-title"> git clone is for taking repository into your local system into a new empty directory or it will create a new directory with same name as report git repository name</p>
+        <div class="indent10">Git clone creates remote-tracking branches for each branch in the cloned repository, visibale using the comamnd <code> git branch -r</code> and also checkout the default branch of the reporitory genreally master branch, it also create a references to the remote branch heads under refs/remotes/origin and by initializing remote.origin.url and remote.origin.fetch configuration variables, this configuration is easily available by the command <code> git remote -v</code> </div>
+        <p> Examples </p>
+        <ul>
+            <li> Clone with HTTPS:
+                <code>git clone https://github.com/username/reporistory_name.git</code>
+            </li>
+            <li>Clone with SSH:
+                <code> git@github.com:username/reporistory_name.git </code>
+            </li>
+        </ul>
+        <h2>Which remote URL should we use for clone?</h2>
+        <div class="indent10">There are several ways to clone repositories available on GitHub. <code>The https://</code> clone URLs are available on all repositories, public and private. These URLs work everywhere--even if you are behind a firewall or proxy. In certain cases, if you'd rather use SSH, you might be able to use SSH over the HTTPS port.</div>
+        <div class=indent10> SSH URLs provide access to a Git repository via SSH, a secure protocol.</div>
+    </div>
+    <h3> References: </h3>
+    <ul>
+        <li> <a href="https://help.github.com/articles/which-remote-url-should-i-use/" rel="nofollow" target="_blank"> Github documentation</a></li>
+    </ul>
+</div>
 </article>
