@@ -5,29 +5,41 @@ description: Git commands it is the best place to learn the useful git commands 
 keywords: git commands, git hard reset, git branch, git push, git apply, git stash, git apply stash, git config, git config list
 ---
 <article id="what-is-git">
-  <h1>What is Git?</h1>
-  <h3> In a nutshell, Git is a Version Control System (VCS).</h3>
-  <h2> Questions: What is Version Control System (VCS)?</h2>
-  <ul>
-    <li>
-      Version control system is a system that records changes to a file or set of
-      files over time so that you can recall specific versions later easily,
-      suppose you are a code developer and want to keep every version of code
-      or after some class complation (each time the project reaches a state you
-      want to record), a Version Control System (VCS) is a very wise thing to use.
-      It allows you to revert files back to a previous state, compare changes over
-      time, it allow you the other developer code changes, see who modified over
-      the time, who has done more numbers of line of code, statistics of the repository,
-      who has done the code with bug and when, and many more, basically you can
-      entirely do the tracking of the files over the time and go back to any
-      previous changes.
-    </li>
-    <li>How does Git record changes over the time work?<li>
-  </ul>
-  <h3> References: </h3>
-    <ul>
-      <li><a href="http://git-scm.com/book/en/v2/Getting-Started-Git-Basics" rel="nofollow" target="_blank">Getting Started - Git Basics</a>
-      <li> A very good video lecture on <a href="http://git-scm.com/video/what-is-git" rel="nofollow" target="_blank">what is Git </a>
-      <li> <a href="http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" rel="nofollow" target="_blank">Getting Started - About Version Control</a>
+    <h1>What is Git?</h1>
+    <div class="indent10">
+        In a nutshell, Git is a Version Control System (VCS).
+    </div>
+    <h2>What is Version Control System (VCS)?</h2>
+    <div class="indent10">
+        Version control system is a system that records changes to a file or set of
+        files over time so that you can recall specific versions later by using git command or various git tools available online. Suppose you are a developer and want to keep every version of code
+        or after some particular tasks completion a Version Control System (VCS) is very useful tool.
+        It allows you to revert files back to a previous state, compare changes over
+        time, it allow you to take the other developer code changes using git command, see who modified the files over
+        the time, who has done more number of lines of code, various type of statistics on the repository,
+        who has done the code with bug and when, and many more, basically you can
+        entirely do the tracking of the files over the time and go back to any
+        previous changes.
+    </div>
+    <h2>How does Git record changes over the time work?</h2>
+    <div class="indent10">
+        Git story each commit a full copy of all the files, except that, for the content already present in the Git repo, the snapshot will simply point to said content rather than duplicate it. That also means that several files with the same content are stored only once. So a snapshot is basically a commit, referring to the content of a directory structure.
+    </div>
+    <div class="indent10">
+        The major difference between Git and any other VCS (Subversion and friends included) is the way Git thinks about its data.
+        Conceptually, most other systems store information as a list of file-based changes. These systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they keep as a set of files and the changes made to each file over time
+    </div>
+
+
+    <h3> References: </h3>
+    <ul class="indent5">
+        <li><a href="http://git-scm.com/book/en/v2/Getting-Started-Git-Basics" rel="nofollow" target="_blank">Getting Started - Git Basics</a></li>
+        <li> A very good video lecture on <a href="http://git-scm.com/video/what-is-git" rel="nofollow" target="_blank">what is Git </a>
+        </li>
+        <li> <a href="http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" rel="nofollow" target="_blank">Getting Started - About Version Control</a></li>
+        <li> <a href="https://stackoverflow.com/questions/8198105/how-does-git-store-files" rel="nofollow" target="_blank">How does git store files?
+
+</a></li>
+
     </ul>
 </article>

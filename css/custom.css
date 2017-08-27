@@ -17,3 +17,9 @@
   margin-top:-22px;
   font-size: 200%;
 }
+.indent10 {
+    text-indent: 10mm;
+}
+.indent5 {
+    text-indent: 5mm;
+}
