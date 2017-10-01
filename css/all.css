@@ -809,7 +809,7 @@ main article h1 + .quick_links {
 main article h2 {
     -webkit-font-smoothing: antialiased;
     font-family: "Museo 300";
-    color: #ff4143;
+    color: seagreen;
     line-height: 100%;
     font-weight: normal;
 }
