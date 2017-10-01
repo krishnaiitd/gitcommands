@@ -11,6 +11,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>http://krishnaiitd.github.io/gitcommands/list-of-git-commands/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://krishnaiitd.github.io/gitcommands/what-is-git/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -51,6 +56,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://krishnaiitd.github.io/gitcommands/git-remote/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://krishnaiitd.github.io/gitcommands/git-commit/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -80,7 +90,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-
   <url>
     <loc>http://krishnaiitd.github.io/gitcommands/about-us/</loc>
     <changefreq>weekly</changefreq>
