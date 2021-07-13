@@ -100,10 +100,14 @@ p, pre {
     margin: 1em 0;
 }
 
-code, kbd, pre, samp {
-    font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
-    font-size: 1em;
+#code, kbd, pre, samp {
+#    font-family: monospace, serif;
+#    _font-family: 'courier new', monospace;
+#    font-size: 1em;
+#}
+code kbd, pre, samp {
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    background-color: #eff0f1;
 }
 
 pre {
@@ -809,7 +813,7 @@ main article h1 + .quick_links {
 main article h2 {
     -webkit-font-smoothing: antialiased;
     font-family: "Museo 300";
-    color: #ff4143;
+    color: seagreen;
     line-height: 100%;
     font-weight: normal;
 }

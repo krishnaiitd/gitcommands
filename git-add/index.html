@@ -1,13 +1,38 @@
 ---
 layout: default
 title: Git Commands - Git add Command, git add to add an untracked files into git indexes.
-description: Git add Command, git add to add an untracked files.
-keywords: git config, git commands, git git config global, git config --list.
+description: Git add Command documentation, tutorials and more leaning about git add command from scratch. git add to add an untracked files.
+keywords: git add, git config, git commands, git git config global, git config --list.
 ---
 <article id="git-add">
   <p>
     <h2> Git add (<code> git add </code>) Command</h2>
   </p>
-  <p>
-    <img src="/images/git-add.png" alt="git add command" />
+<div>
+<h3>git-add - Add file contents to be indexed for commit</h3>
+<p> his command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
+</p>
+	<ul>
+	<li>To add a particular file, use the following command:
+	<code>$ git add path/to/file</code>
+	</li>
+
+	<li>To add a all changed files, use the following command:
+	<code>$ git add .</code>
+	</li>
+
+	<li>To add a all changed files of a directory, use the following command:
+		<code>$ git add path/to/directoryOnly </code>
+	</li>
+</ul>
+
+<p> Before adding into index i.e before running above command, if you do <code>$ git status</code> all changes files listed with red colour [default colour if you havn't changed it] once you add it into index by using above commands and then check <code>$ git status</code> all added files are ready for commit and visibles in green</p>
+</div>
+<h3 style="text-color:red;">What if you have incidentally indexed a file using bove command and you don't want to commit in the next commit, How should you remove the index file from next commit? </h3>
+<p>
+	Simple you have to un-index it from stage file by the following command <code>$ git reset git-add/index.html</code> i.e <code>$ git reset fileName</code> will remove the fileName from staged/indexed from next commit.
+</p>
+<p>
+After each add commands you can check the staged files by the command <code>$ git status</code>, for details of git status command, please <a href="{{ site.baseurl }}/git-status">click here</a>
+</p>
 </article>
