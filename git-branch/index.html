@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Git Commands - Git branch Command, git branch command help to know the list of brnaches name in the current git repository.
-description: Git branch listed the checkout branch in a git repository.
-keywords: git status, git commands, git diff, git stash.
+title: git branch is a command which helps in creating, deleting and listing branches of the main coderepository.
+description: Git branch command list all branches you have checkout out till now and git branch -a will include the remote branches also.
+keywords: git branch, git commands, git status, git apply, git checkout -b
 ---
 <article id="git-branch">
   <p>
@@ -14,6 +14,67 @@ keywords: git status, git commands, git diff, git stash.
   <p><code>git branch</code> helps in simultaneous development of multiple features in parallel branches and retains the stable code in the master branch</p>
   <p><code>git branch</code> acts as a pointer to a series of commits and has independent development line. it gives the project a fork like structure as new commits are saved in the current branch</p>
   <p>Another feature of it is that it does not let one switch between the branches.</p>
+  <p>
 
+<div>
+
+  <ul>
+    <li>To list all branches you have already locally checkout till now, use the following command:
+    <code>$ git branch</code>
+    <p>Above commands will list all the branch in your local system and current branch should be marked with green colour
+
+        <pre><font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ git branch
+* <font color="#26A269">gh-pages</font>
+  master
+<font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ </pre>
+
+    </p>
+    </li>
+
+
+    <li>To list all the branch at remote as well locally checkedout ones, use the following command:
+    <code>$ git branch -a</code>
+      <p>-a or (--all) option in git branch will provide the List of both remote-tracking branches and local brnaches. e.g: in the my machine:
+        <pre><font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ git branch -a
+* <font color="#26A269">gh-pages</font>
+  master
+  <font color="#C01C28">remotes/origin/HEAD</font> -&gt; origin/master
+  <font color="#C01C28">remotes/origin/gh-pages</font>
+  <font color="#C01C28">remotes/origin/master</font>
+<font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$</pre>
+
+</p>
+    </li>
+
+    <li>To delete branch created from git checkout command or git branch, use the following command:
+      <code>$ git branch -d <'branchName'> </code>
+        <p><strong>-d</strong> or <strong>--delete</strong> option in git branch <strong>delete</strong> a branch from your local machine. The branch must be fully merged in its upstream branch</p>
+        <p>-<strong>D</strong> option in git branch is just <strong>Shortcut for --delete --force</strong> i.e force removal from your machine of a branch
+        </p>
+    </li>
+  </ul>
+</div>
+      
+<div>
+      <h3 style="color:red;">How to create branch from git branch command</h3>
+
+      <p>This is bit tricky questions and not eveybody is aware of it, so below is the examples to create a new branch <i>t</i>, in the example we have two branches <i>gh-pages</i> and <i>master</i> and then we have create branch  <i>t</i> as follow</p>
+
+
+      <pre><font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ git branch
+* <font color="#26A269">gh-pages</font>
+  master
+<font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ git branch t gh-pages 
+<font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ git switch t
+Switched to branch &apos;t&apos;
+<font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ git branch
+  gh-pages
+  master
+* <font color="#26A269">t</font>
+<font color="#26A269"><b>krishna@krishna-server1</b></font>:<font color="#12488B"><b>~/Documents/gitcommands</b></font>$ </pre>
+
+  The above command <code>git branch <'newBranchName'> <'fromBranchName'></code> can be combined as <code>git checkout -b <'newBranchName'></code> for more details please check <a href="{{ site.baseurl }}/git-checkout">git checkout comamnd</a>
+
+</div>
   
 </article>
